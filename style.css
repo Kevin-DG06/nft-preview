@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background:  hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card{
+    border-radius: 15px;
+    width: 275px;
+    background: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+}
+
+.image{
+    position: relative;
+}
+
+.image div{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-main{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+h3{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3:hover{
+    transition: all 0.5s ease-in-out;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.discricao{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding: 20px 0;
+}
+
+.infor{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.infor li:first-child{
+    color: hsl(178, 100%, 50%);
+    list-style-image: url(./images/icon-ethereum.svg);
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.infor li:last-child{
+    color: hsl(215, 51%, 70%);
+    list-style-image: url(./images/icon-clock.svg);
+}
+
+hr{
+    margin: 20px 0;
+    border-color: hsl(215, 32%, 27%);
+}
+
+.perfil{
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+
+#avatar{
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.perfil p{
+    padding: 5px 50px;
+}
+
+span{
+    color: #fff;
+}
+
+span:hover{
+    transition: all 0.5s ease-in-out;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
